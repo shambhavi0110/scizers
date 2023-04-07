@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <script src="task.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>Task Manager</h1>
+      
+        <div>
+          <h2>Add User</h2>
+          <input type="text" id="user-input">
+          <button id="add-user-btn">Add User</button>
+        </div>
+      
+        <div>
+          <h2>Create Task</h2>
+          <label for="task-name-input">Task Name:</label>
+          <input type="text" id="task-name-input">
+          <label for="due-date-input">Due Date:</label>
+          <input type="date" id="due-date-input">
+          <button id="create-task-btn">Create Task</button>
+        </div>
+      
+        <div>
+          <h2>Task List</h2>
+          <label for="filter-name-input">Filter by Name:</label>
+          <input type="text" id="filter-name-input">
+          <label for="filter-status-input">Filter by Status:</label>
+          <select id="filter-status-input">
+            <option value="">All</option>
+            <option value="pending">Pending</option>
+            <option value="completed">Completed</option>
+          </select>
+          <label for="filter-date-input">Filter by Due Date:</label>
+          <input type="date" id="filter-date-input">
+          <ul id="task-list"></ul>
+        </div>
+      </div>
+      
+</body>
+</html>
